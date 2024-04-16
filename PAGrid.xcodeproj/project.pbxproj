@@ -15,6 +15,7 @@
 		844BD16A2BCD849E0045AD76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BD1682BCD849E0045AD76 /* LaunchScreen.storyboard */; };
 		844BD1752BCD849E0045AD76 /* PAGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1742BCD849E0045AD76 /* PAGridTests.swift */; };
 		844BD1802BCD849F0045AD76 /* PAGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD17F2BCD849F0045AD76 /* PAGridUITests.swift */; };
+		844BD1912BCD850F0045AD76 /* PAGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1902BCD850F0045AD76 /* PAGridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		844BD17B2BCD849F0045AD76 /* PAGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BD17F2BCD849F0045AD76 /* PAGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGridUITests.swift; sourceTree = "<group>"; };
 		844BD1812BCD849F0045AD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844BD1902BCD850F0045AD76 /* PAGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		844BD15C2BCD84980045AD76 /* PAGrid */ = {
 			isa = PBXGroup;
 			children = (
+				844BD1952BCD851B0045AD76 /* New Group */,
 				844BD15D2BCD84980045AD76 /* AppDelegate.swift */,
 				844BD15F2BCD84980045AD76 /* SceneDelegate.swift */,
 				844BD1612BCD84980045AD76 /* ViewController.swift */,
@@ -106,6 +109,7 @@
 				844BD1662BCD849E0045AD76 /* Assets.xcassets */,
 				844BD1682BCD849E0045AD76 /* LaunchScreen.storyboard */,
 				844BD16B2BCD849E0045AD76 /* Info.plist */,
+				844BD1902BCD850F0045AD76 /* PAGridCell.swift */,
 			);
 			path = PAGrid;
 			sourceTree = "<group>";
@@ -126,6 +130,13 @@
 				844BD1812BCD849F0045AD76 /* Info.plist */,
 			);
 			path = PAGridUITests;
+			sourceTree = "<group>";
+		};
+		844BD1952BCD851B0045AD76 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			files = (
 				844BD1622BCD84980045AD76 /* ViewController.swift in Sources */,
 				844BD15E2BCD84980045AD76 /* AppDelegate.swift in Sources */,
+				844BD1912BCD850F0045AD76 /* PAGridCell.swift in Sources */,
 				844BD1602BCD84980045AD76 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

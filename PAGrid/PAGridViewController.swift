@@ -2,12 +2,12 @@
 //  ViewController.swift
 //  PAGrid
 //
-//  Created by Admin on 15/04/24.
+//  Created BheemaBadri on 15/04/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class PAGridViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

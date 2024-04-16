@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		844BD15E2BCD84980045AD76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD15D2BCD84980045AD76 /* AppDelegate.swift */; };
 		844BD1602BCD84980045AD76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD15F2BCD84980045AD76 /* SceneDelegate.swift */; };
-		844BD1622BCD84980045AD76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1612BCD84980045AD76 /* ViewController.swift */; };
 		844BD1652BCD84980045AD76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BD1632BCD84980045AD76 /* Main.storyboard */; };
 		844BD1672BCD849E0045AD76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844BD1662BCD849E0045AD76 /* Assets.xcassets */; };
 		844BD16A2BCD849E0045AD76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844BD1682BCD849E0045AD76 /* LaunchScreen.storyboard */; };
 		844BD1752BCD849E0045AD76 /* PAGridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1742BCD849E0045AD76 /* PAGridTests.swift */; };
 		844BD1802BCD849F0045AD76 /* PAGridUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD17F2BCD849F0045AD76 /* PAGridUITests.swift */; };
-		844BD1912BCD850F0045AD76 /* PAGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1902BCD850F0045AD76 /* PAGridCell.swift */; };
+		844BD1AE2BCE02B30045AD76 /* PAGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1A92BCE02B30045AD76 /* PAGridCell.swift */; };
+		844BD1AF2BCE02B30045AD76 /* PAImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1AB2BCE02B30045AD76 /* PAImageCacheManager.swift */; };
+		844BD1B02BCE02B30045AD76 /* PANetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1AD2BCE02B30045AD76 /* PANetworkingManager.swift */; };
+		844BD1B82BCE02CA0045AD76 /* PAGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1B72BCE02CA0045AD76 /* PAGridViewController.swift */; };
+		844BD1C12BCE02E70045AD76 /* PAMediaCoverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BD1C02BCE02E70045AD76 /* PAMediaCoverage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		844BD15A2BCD84980045AD76 /* PAGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PAGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BD15D2BCD84980045AD76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844BD15F2BCD84980045AD76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		844BD1612BCD84980045AD76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		844BD1642BCD84980045AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		844BD1662BCD849E0045AD76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844BD1692BCD849E0045AD76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +52,11 @@
 		844BD17B2BCD849F0045AD76 /* PAGridUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PAGridUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844BD17F2BCD849F0045AD76 /* PAGridUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGridUITests.swift; sourceTree = "<group>"; };
 		844BD1812BCD849F0045AD76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		844BD1902BCD850F0045AD76 /* PAGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAGridCell.swift; sourceTree = "<group>"; };
+		844BD1A92BCE02B30045AD76 /* PAGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAGridCell.swift; sourceTree = "<group>"; };
+		844BD1AB2BCE02B30045AD76 /* PAImageCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAImageCacheManager.swift; sourceTree = "<group>"; };
+		844BD1AD2BCE02B30045AD76 /* PANetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PANetworkingManager.swift; sourceTree = "<group>"; };
+		844BD1B72BCE02CA0045AD76 /* PAGridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAGridViewController.swift; sourceTree = "<group>"; };
+		844BD1C02BCE02E70045AD76 /* PAMediaCoverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PAMediaCoverage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,15 +107,17 @@
 		844BD15C2BCD84980045AD76 /* PAGrid */ = {
 			isa = PBXGroup;
 			children = (
-				844BD1952BCD851B0045AD76 /* New Group */,
+				844BD1AC2BCE02B30045AD76 /* Networking */,
+				844BD1AA2BCE02B30045AD76 /* ImageCache */,
+				844BD1A82BCE02B30045AD76 /* CustomCell */,
+				844BD1BF2BCE02E70045AD76 /* Model */,
+				844BD1B72BCE02CA0045AD76 /* PAGridViewController.swift */,
 				844BD15D2BCD84980045AD76 /* AppDelegate.swift */,
 				844BD15F2BCD84980045AD76 /* SceneDelegate.swift */,
-				844BD1612BCD84980045AD76 /* ViewController.swift */,
 				844BD1632BCD84980045AD76 /* Main.storyboard */,
 				844BD1662BCD849E0045AD76 /* Assets.xcassets */,
 				844BD1682BCD849E0045AD76 /* LaunchScreen.storyboard */,
 				844BD16B2BCD849E0045AD76 /* Info.plist */,
-				844BD1902BCD850F0045AD76 /* PAGridCell.swift */,
 			);
 			path = PAGrid;
 			sourceTree = "<group>";
@@ -132,11 +140,36 @@
 			path = PAGridUITests;
 			sourceTree = "<group>";
 		};
-		844BD1952BCD851B0045AD76 /* New Group */ = {
+		844BD1A82BCE02B30045AD76 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				844BD1A92BCE02B30045AD76 /* PAGridCell.swift */,
 			);
-			path = "New Group";
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		844BD1AA2BCE02B30045AD76 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				844BD1AB2BCE02B30045AD76 /* PAImageCacheManager.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		844BD1AC2BCE02B30045AD76 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				844BD1AD2BCE02B30045AD76 /* PANetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		844BD1BF2BCE02E70045AD76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				844BD1C02BCE02E70045AD76 /* PAMediaCoverage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844BD1622BCD84980045AD76 /* ViewController.swift in Sources */,
 				844BD15E2BCD84980045AD76 /* AppDelegate.swift in Sources */,
-				844BD1912BCD850F0045AD76 /* PAGridCell.swift in Sources */,
+				844BD1AE2BCE02B30045AD76 /* PAGridCell.swift in Sources */,
+				844BD1B02BCE02B30045AD76 /* PANetworkingManager.swift in Sources */,
+				844BD1C12BCE02E70045AD76 /* PAMediaCoverage.swift in Sources */,
 				844BD1602BCD84980045AD76 /* SceneDelegate.swift in Sources */,
+				844BD1AF2BCE02B30045AD76 /* PAImageCacheManager.swift in Sources */,
+				844BD1B82BCE02CA0045AD76 /* PAGridViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

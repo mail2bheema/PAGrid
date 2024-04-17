@@ -13,8 +13,8 @@ class PAGridViewController: UIViewController {
     
     private let networkingManager = NetworkingManager.shared
     private let imageCacheManager = ImageCacheManager.shared
-    private var imageURLs: [URL] = []
-    
+    private var mediaObjectsList: [MediaCoverage] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +38,7 @@ class PAGridViewController: UIViewController {
     }
     
     func fetchImagesFromServer() {
-        guard let url = URL(string: "https://acharyaprashant.org/api/v2/content/misc/media-coverages?limit=100") else {
+        guard let url = URL(string: baseURL) else {
             print("Invalid URL")
             return
         }
@@ -49,8 +49,7 @@ class PAGridViewController: UIViewController {
                 // Handle successful data retrieval
                 print("Data fetched successfully:", data)
                 do {
-                    let mediaCoverages = try JSONDecoder().decode([MediaCoverage].self, from: data)
-                    self.imageURLs = mediaCoverages.compactMap { URL(string: $0.coverageURL) }
+                    mediaObjectsList = try JSONDecoder().decode([MediaCoverage].self, from: data)
 
                     DispatchQueue.main.async { [self] in
                         self.collectionView.reloadData()
@@ -70,16 +69,16 @@ class PAGridViewController: UIViewController {
 
 extension PAGridViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageURLs.count
+        return mediaObjectsList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
         
-        let imageURL = imageURLs[indexPath.item]
+        let mediaObject = mediaObjectsList[indexPath.item]
         cell.imageView.image = nil
         
-        ImageCacheManager.shared.getImage(withURL: imageURL) { result in
+        ImageCacheManager.shared.getImage(mediaObj:mediaObject ) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let image):

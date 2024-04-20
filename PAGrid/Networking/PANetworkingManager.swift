@@ -7,8 +7,8 @@
 
 import Foundation
 
-public var baseURL = "https://acharyaprashant.org/api/v2/content/misc/media-coverages?limit=100"
-public var placeHolderImage = "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
+var baseURL = "https://acharyaprashant.org/api/v2/content/misc/media-coverages?limit=100"
+var placeHolderImage = "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
 
 class NetworkingManager {
     static let shared = NetworkingManager()

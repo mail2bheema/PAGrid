@@ -43,16 +43,16 @@ class PAGridViewController: UIViewController {
             return
         }
         
-        networkingManager.fetchData(from: url) { [self] result in
+        networkingManager.fetchData(from: url) { [weak self] result in
             switch result {
             case .success(let data):
                 // Handle successful data retrieval
                 print("Data fetched successfully:", data)
                 do {
-                    mediaObjectsList = try JSONDecoder().decode([MediaCoverage].self, from: data)
+                    self?.mediaObjectsList = try JSONDecoder().decode([MediaCoverage].self, from: data)
 
                     DispatchQueue.main.async { [self] in
-                        self.collectionView.reloadData()
+                        self?.collectionView.reloadData()
                     }
                 } catch {
                     print("Failed to decode data:", error.localizedDescription)
